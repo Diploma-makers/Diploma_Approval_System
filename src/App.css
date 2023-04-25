@@ -1,0 +1,194 @@
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+h1 {
+  font-size: 50px;
+}
+
+body {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Roboto', sans-serif;
+  background-color: #1f1f1f;
+  color: white;
+}
+
+header {
+  padding: 30px;
+  background-color: #1f1f1f;
+  height: 30px;
+}
+
+.sidenav {
+  width: 240px;
+  background-color: #1f1f1f;
+  height: 95vh;
+  padding: 0 30px;
+}
+
+.search{
+  margin-right: 10px;
+}
+
+.logo {
+  width: 150px;
+}
+
+ul {
+  padding: 0;
+}
+
+ul li {
+  list-style-type: none;
+  margin: 10px 0;
+}
+
+ul li a {
+  color: #96a5ae;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  padding: 10px 15px;
+  border-radius: 6px;
+}
+
+ul li a:hover,
+ul li a.active {
+  color: white;
+  background: #177ddc;
+}
+
+.pressed #active {
+  color: white;
+  background: #177ddc;
+}
+
+ul li a svg {
+  margin-right: 10px;
+}
+
+header svg {
+  font-size: 30px;
+}
+
+.MainBody {
+  color: #000000;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: white;
+  margin: 1rem;
+
+}
+
+.MainBody-block {
+  border-bottom: 1px solid lightgray;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.MainBody-block-1{
+  border-bottom: 1px solid lightgray;
+  background: #f7f7f7;
+  padding: 1rem;
+  display: flex;
+  justify-content: space-between;
+}
+
+.MainBody-block-In {
+  padding: 1rem;
+  display: inline-block;
+}
+
+.MainBody-block-1:hover {
+  background-color: #ececec;
+}
+
+.MainBody-block:hover {
+  background-color: #ececec;
+}
+
+.dashBoard{
+  display: flex;
+  justify-content: space-between;
+  margin: 5%;
+}
+
+.dashButton{
+  border: 1px solid #2f2f2f;
+  border-radius: 10px;
+  background-color: #1f1f1f;
+  height: 20vh;
+  width: 35vh;
+  font-size: 20px;
+  color: #ececec;
+}
+
+.dashButton:hover{
+  background-color: #141414;
+  transition: 0.3s;
+}
+
+.main {
+  display: flex;
+}
+
+.rightbody{
+  width: 100%;
+  background-color: black;
+}
+
+.docPage{
+  margin: 2rem;
+}
+
+.tableHead{
+  border-bottom: 2px solid #2f2f2f;
+  background-color: #1f1f1f;
+  color: #ececec;
+}
+
+.form{
+  border: 1px solid #2f2f2f;
+  background-color: #1f1f1f;
+  color: #ececec;
+}
+
+.tdbor{
+  border-right: 1px solid #2f2f2f;
+}
+
+.rows{
+  border-bottom: 1px solid #1f1f1f;
+  background-color: #141414;
+  color: #ececec;
+}
+
+.rows :hover{
+  transition: 0.3s;
+  background-color: #1f1f1f;
+}
+
+.statusButton{
+  width: 100%;
+}
+
+.formPage{
+  margin: 2rem;
+  width: 50%;
+}
