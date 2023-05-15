@@ -29,9 +29,9 @@ body {
 }
 
 header {
-  padding: 30px;
+  width: 100%;
+  padding: 20px;
   background-color: #1f1f1f;
-  height: 30px;
 }
 
 .sidenav {
@@ -41,8 +41,50 @@ header {
   padding: 0 30px;
 }
 
+h2{
+  text-align: center;
+}
+
+h6{
+  margin-left: 1rem;
+}
+
+.infoPro{
+  border: 1px solid #2f2f2f;
+  background-color: #1f1f1f;
+  color: #ececec;
+  margin: 1rem;
+  padding: 2rem;
+}
+
 .search{
   margin-right: 10px;
+}
+
+
+.profile{
+  display: flex;
+  justify-content: right;
+}
+
+.proForm{
+  border-radius: 3px;
+  padding: 2rem;
+  border: 1px solid #2f2f2f;
+  background-color: #1f1f1f;
+  width: 100%;
+  height: auto;
+  display: flex;
+}
+
+.logoProf{
+  font-size: 10rem;
+  margin: 1rem;
+}
+
+.logoMem{
+  font-size: 5rem;
+  margin: 1rem;
 }
 
 .logo {
@@ -191,4 +233,163 @@ header svg {
 .formPage{
   margin: 2rem;
   width: 50%;
+}
+
+.box{
+  border: 1px solid black;
+  position: relative;
+  width: auto;
+  height: auto;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.box form {
+  position: relative;
+  inset: 4px;
+  padding: 50px 40px;
+  padding-top: 10px;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+}
+
+.box form h2{
+  color: #fff;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 0.1rem;
+}
+
+.box form .inputBox{
+  position: relative;
+  width: 300px;
+  margin-top: 35px;
+}
+
+.box form .inputBox input{
+  /* position: relative; */
+  width: 100%;
+  padding: 10px 10px 10px;
+  background: transparent;
+  outline: none;
+  border: none;
+  box-shadow: none;
+  color: white;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+  z-index: 10;
+}
+
+.box form .inputBox span{
+  position: absolute;
+  left: 0;
+  padding: 20px 10px 10px;
+  pointer-events: none;
+  color: #8f8f8f;
+  font-size: 1em;
+  letter-spacing: 0.05em;
+  transition: 0.5s;
+}
+
+.box form .inputBox input:valid ~ span,
+.box form .inputBox input:focus ~ span {
+  color: #fff;
+  font-size: 0.75em;
+  transform: translateY(-34px);
+}
+
+.box form .inputBox i{
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+/* .box form .inputBox input:valid ~ i,
+.box form .inputBox input:focus ~ i {
+  height: 44px;
+} */
+
+.box form button[type="submit"]{
+  border: none;
+  outline: none;
+  padding: 9px 25px;
+  background: #fff;
+  cursor: pointer;
+  font-size: 0.9em;
+  border-radius: 4px;
+  font-weight: 600;
+  width: 100%;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+ .box form button[type="submit"]:active{
+  opacity: 0.8;
+ }
+
+ .box img{
+  margin-left: 1rem;
+  margin-top: 1rem;
+ }
+
+ .appMain{
+  display: flex;
+  justify-content: center;
+  margin-top: 10rem;
+ }
+
+ .lnk-btn{
+  background: none;
+  color: white;
+  text-decoration: underline;
+  border: none;
+  outline: none;
+ }
+ .lnk-btn:hover{
+  color: white;
+ }
+
+ .form_radio_btn {
+	display: inline-block;
+	margin-right: 10px;
+}
+.form_radio_btn input[type=radio] {
+	display: none;
+}
+.form_radio_btn label {
+	display: inline-block;
+	cursor: pointer;
+	padding: 0px 15px;
+	line-height: 34px;
+	border: 1px solid #999;
+	border-radius: 6px;
+	user-select: none;
+}
+ 
+/* Checked */
+.form_radio_btn input[type=radio]:checked + label {
+	background: white;
+  color: #000000;
+  transition: 0.3s;
+}
+ 
+/* Hover */
+.form_radio_btn label:hover {
+	color: #666;
+}
+ 
+/* Disabled */
+.form_radio_btn input[type=radio]:disabled + label {
+	background: #efefef;
+	color: #666;
 }

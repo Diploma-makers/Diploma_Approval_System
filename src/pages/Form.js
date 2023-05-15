@@ -3,10 +3,10 @@ import Form from 'react-bootstrap/Form';
 
 const FormDoc = () => {
     return (
-        <div className='formPage'>
+        <div className='docPage'>
             <h1>Form</h1>
             <hr></hr>
-            <Form className="form p-5">
+            <Form className="form p-5 w-50">
                 <Form.Group className="mb-3" controlId="formBasicEmail">
                     <Form.Label>Fullname</Form.Label>
                     <Form.Control placeholder="Fullname" />

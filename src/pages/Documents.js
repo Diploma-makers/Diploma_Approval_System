@@ -1,6 +1,5 @@
 import { docData } from "../Data/DocData"
-import { Button, Container, Table } from "react-bootstrap"
-import { Form } from 'react-bootstrap';
+import { Button, Form, Table } from "react-bootstrap"
 import InputGroup from 'react-bootstrap/InputGroup';
 import { useState } from "react"; 
 import { Link } from "react-router-dom";
@@ -29,14 +28,14 @@ function Documents () {
                     <Form className="m-3">
                         <InputGroup className="my-3">
                             <h4><AiOutlineSearch className="search"/></h4>
-                            <Form.Control onChange={(e) => setSearch(e.target.value)} placeholder='Search contacts' />
+                            <Form.Control onChange={(e) => setSearch(e.target.value)} placeholder='Search' />
                         </InputGroup> 
                     </Form>
                     <Table>
                         <thead className="tableHead">
                             <tr>
                                 <th>Topic title</th>
-                                <th>Descpiction</th>
+                                <th>Description</th>
                                 <th>Status</th>
                             </tr>
                         </thead>
