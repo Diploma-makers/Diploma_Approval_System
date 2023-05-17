@@ -5,13 +5,17 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Dashboard from './pages/Dashboard'
 import Documents from './pages/Documents'
-import Form from './pages/Form'
+import Form from './pages/FormDoc'
 import Topic from "./pages/Topic"
 import Profile from "./pages/Profile"
 import CalendarApp from "./pages/Calendar"
+import DocumentsTeacher from './pages/DocumentsTeacher';
 import { Link } from 'react-router-dom'
 import { BsFillPersonFill } from 'react-icons/bs'
+import TrackRole from './componets/TrackRole';
 import './App.css';
+import TrackForm from './componets/TrackForm';
+import FormDoc from './pages/FormDoc';
 
 function Main() {
   return (
@@ -30,8 +34,8 @@ function Main() {
               <Route path='/about'  element={<About />} exact/>
               <Route path='/calendar'  element={<CalendarApp />} exact/>
               <Route path='/dashboard'  element={<Dashboard />}/>
-              <Route path='/dashboard/documents'  element={<Documents />}/>
-              <Route path='/form'  element={<Form />}/>
+              <Route path='/dashboard/documents'  element={<TrackRole />}/>
+              <Route path='/form'  element={<FormDoc />}/>
               <Route path='/topic' element={<Topic />}/>
               <Route path='/profile' element={<Profile />}/>
             </Routes>

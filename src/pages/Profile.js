@@ -35,7 +35,7 @@ const Profile = () => {
     useEffect(() => {
     findByUid().then((data) => setUsers(data));
     }, []);
-    // console.log(users.map((users) => ( users.group)))
+    console.log(users.map((users) => ( users.group)))
     return (
         <div className="docPage">
             <h1>Profile</h1>
@@ -53,7 +53,7 @@ const Profile = () => {
                             <h6>{users.map((users) => ( users.name))} {users.map((users) => ( users.surname))}</h6>
                         </Form.Group>
                         <Form.Group>Group:
-                            <h6>{users.map((users) => ( users.group))}</h6></Form.Group>
+                            <h6>{users.map((users) => ( users.group).toUpperCase())}</h6></Form.Group>
                         <Form.Group>Topic:
                             <h6>Apple</h6></Form.Group>
                     </Form>

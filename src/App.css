@@ -535,3 +535,15 @@ header svg {
 .mWidth{
   width: 100%;
 }
+
+.newsBox{
+  border: 1px solid #303030;
+  background-color: #1f1f1f;
+  margin: 1rem;
+  padding: 1rem;
+}
+.spanDate{
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+}

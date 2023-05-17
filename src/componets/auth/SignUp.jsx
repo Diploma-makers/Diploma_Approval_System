@@ -111,14 +111,16 @@ const SignUp = (props) => {
                 <div>
                     <br></br>
                     <div class="form_radio_btn">
-                        <input id="radio-1" type="radio" name="radio" value="Student" 
+                        <input
+                        required="required" id="radio-1" type="radio" name="radio" value="Student" 
                         onChange={(e) => setRole(e.target.value)}
                         ></input>
                         <label for="radio-1">Student</label>
                     </div>
 
                     <div class="form_radio_btn">
-                        <input id="radio-2" type="radio" name="radio" value="Teacher" 
+                        <input
+                        required="required" id="radio-2" type="radio" name="radio" value="Teacher" 
                         onChange={(e) => setRole(e.target.value)}></input>
                         <label for="radio-2">Teacher</label>
                     </div>

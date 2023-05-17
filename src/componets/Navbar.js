@@ -6,6 +6,7 @@ import { AiOutlineForm } from 'react-icons/ai'
 import { RiDashboardFill } from 'react-icons/ri'
 import { AiFillContacts } from 'react-icons/ai'
 import { HiDocumentDuplicate } from 'react-icons/hi'
+import TrackForm from './TrackForm'
 
 const Navbar = () => {
     return (
@@ -32,10 +33,8 @@ const Navbar = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link to="/form">
-                        <AiOutlineForm /> 
-                        Form
-                    </Link>
+                    
+                    <TrackForm/>
                 </li>
                 <li>
                     <Link to="/about">

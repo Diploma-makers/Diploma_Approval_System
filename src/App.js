@@ -7,7 +7,7 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Dashboard from './pages/Dashboard'
 import Documents from './pages/Documents'
-import Form from './pages/Form'
+import Form from './pages/FormDoc'
 import Topic from "./pages/Topic"
 import Profile from "./pages/Profile"
 import { Link } from 'react-router-dom'
