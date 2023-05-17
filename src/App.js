@@ -49,14 +49,11 @@ function App(props) {
   return (
     <div>
         <div>
-          {authUser ? 
-            <>
+          {authUser 
+          ? <>
               <Main/>
-              <p>{'Signed In as ' + authUser.email}</p>
-              <button onClick={userSignOut}> Sign Out</button>
             </> 
-          : 
-            <>
+          : <>
               <div className='appMain'>
                 {
                   currentForm === "login" ? <SignIn onFormSwitch={toggleForm} /> : <SignUp onFormSwitch={toggleForm} />

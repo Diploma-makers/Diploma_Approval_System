@@ -1,22 +1,27 @@
-import Firebase from "firebase/compat/app";
 import { getFirestore } from "firebase/firestore";
 import { initializeApp } from "firebase/app";
-import { getAuth } from "firebase/auth";
+import { getAuth, OAuthProvider  } from "firebase/auth";
+import firebase from 'firebase/compat/app';
+import 'firebase/compat/firestore'
+
 const firebaseConfig = {
-  apiKey: "AIzaSyDKdPi1zJckz7V0XMbaxWSyB9LzfaNuhS8",
-  authDomain: "diploma-project-ba3f8.firebaseapp.com",
-  projectId: "diploma-project-ba3f8",
-  storageBucket: "diploma-project-ba3f8.appspot.com",
-  messagingSenderId: "802841404102",
-  appId: "1:802841404102:web:d5ae6d024b249ed20cadc7",
-  measurementId: "G-0TBNZ7YRDL"
+  apiKey: "AIzaSyCla6ZIjYRMkNwYFntjWrNAagLswXcoh2E",
+  authDomain: "diploma-approval-system.firebaseapp.com",
+  databaseURL: "https://diploma-approval-system-default-rtdb.europe-west1.firebasedatabase.app",
+  projectId: "diploma-approval-system",
+  storageBucket: "diploma-approval-system.appspot.com",
+  messagingSenderId: "183070933585",
+  appId: "1:183070933585:web:a555a17cc9ea586bb6ae70",
+  measurementId: "G-X30YBGXLMW"
 };
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);
 
-const db = getFirestore();
+const db = getFirestore(app);
 
 const auth = getAuth(app);
+
+const provider = new OAuthProvider('microsoft.com');
 
 export { auth, db };

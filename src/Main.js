@@ -8,6 +8,7 @@ import Documents from './pages/Documents'
 import Form from './pages/Form'
 import Topic from "./pages/Topic"
 import Profile from "./pages/Profile"
+import CalendarApp from "./pages/Calendar"
 import { Link } from 'react-router-dom'
 import { BsFillPersonFill } from 'react-icons/bs'
 import './App.css';
@@ -25,12 +26,13 @@ function Main() {
           <Navbar/>
           <div className='rightbody'>
             <Routes>
-               <Route path='/'  element={<Home/>}/>
+              <Route path='/'  element={<Home/>}/>
               <Route path='/about'  element={<About />} exact/>
+              <Route path='/calendar'  element={<CalendarApp />} exact/>
               <Route path='/dashboard'  element={<Dashboard />}/>
               <Route path='/dashboard/documents'  element={<Documents />}/>
               <Route path='/form'  element={<Form />}/>
-              <Route path='/dashboard/documents/topic' element={<Topic />}/>
+              <Route path='/topic' element={<Topic />}/>
               <Route path='/profile' element={<Profile />}/>
             </Routes>
           </div>

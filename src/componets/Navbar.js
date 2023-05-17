@@ -4,6 +4,7 @@ import { AiFillHome } from 'react-icons/ai'
 import { AiFillCalendar } from 'react-icons/ai'
 import { AiOutlineForm } from 'react-icons/ai'
 import { RiDashboardFill } from 'react-icons/ri'
+import { AiFillContacts } from 'react-icons/ai'
 import { HiDocumentDuplicate } from 'react-icons/hi'
 
 const Navbar = () => {
@@ -16,6 +17,12 @@ const Navbar = () => {
                     <Link to="/" >
                         <AiFillHome /> 
                         Home
+                    </Link>
+                </li>
+                <li>
+                    <Link to="/calendar" >
+                        <AiFillCalendar /> 
+                        Calendar
                     </Link>
                 </li>
                 <li>
@@ -32,7 +39,7 @@ const Navbar = () => {
                 </li>
                 <li>
                     <Link to="/about">
-                        <AiFillCalendar /> 
+                        <AiFillContacts /> 
                         About us
                     </Link>
                 </li>

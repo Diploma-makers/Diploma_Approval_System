@@ -1,5 +1,6 @@
 import { Button, Container, Table, FloatingLabel } from "react-bootstrap"
 import Form from 'react-bootstrap/Form';
+import React, { useState }from "react";
 
 const FormDoc = () => {
     return (
