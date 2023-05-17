@@ -550,3 +550,11 @@ header svg {
 .btn-signout{
   width: 90%;
 }
+.avatarGit{
+  border-radius: 50%;
+  width: 80px;
+  margin-right: 1rem;
+}
+.aboutGit{
+  display: flex;
+}
