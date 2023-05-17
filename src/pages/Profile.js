@@ -35,7 +35,23 @@ const Profile = () => {
     useEffect(() => {
     findByUid().then((data) => setUsers(data));
     }, []);
-    console.log(users.map((users) => ( users.group)))
+    console.log(users.map((users) => ( users.role)))
+
+    const currentRole = users.map((users) => ( users.role))
+    const teamShow = (currentRole) => {
+        if(currentRole == "Student"){
+            return (
+                <Form className='infoPro'>
+                    <h3>Team members</h3>
+                    <Form.Group>
+                        <BsPersonCircle className='logoMem'/>
+                        <BsPersonCircle className='logoMem'/>
+                    </Form.Group>
+                </Form>
+            )
+        }
+    }
+
     return (
         <div className="docPage">
             <h1>Profile</h1>
@@ -57,13 +73,10 @@ const Profile = () => {
                         <Form.Group>Topic:
                             <h6>Apple</h6></Form.Group>
                     </Form>
-                    <Form className='infoPro'>
-                        <h3>Team members</h3>
-                        <Form.Group>
-                            <BsPersonCircle className='logoMem'/>
-                            <BsPersonCircle className='logoMem'/>
-                        </Form.Group>
-                    </Form>
+                    {
+                        teamShow(currentRole)
+                    }
+                   
             </div>
                 
                 <div className='infoPro'>

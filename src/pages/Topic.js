@@ -50,9 +50,13 @@ function Topic(props) {
         <hr></hr>
         <div>
             <h1> Descpiction </h1>
-            <span>{data ? data.description : "No Description"}</span>
+            <div className="newsBox">
+                <br></br>
+                <div>
+                    <p>{data ? data.description : "No Description"}</p>
+                </div>
+            </div>
         </div>
-
         
 
         <Button variant="success" disabled>Submit</Button>{' '}
