@@ -48,7 +48,7 @@ const Home = () => {
         <div className="docPage">
                 <h1>Home</h1>
                 <hr></hr>
-                <div className="form">
+                <div className="formHome">
                 {documents
                     .map((documents) => ( 
                         <div key={documents.id}>

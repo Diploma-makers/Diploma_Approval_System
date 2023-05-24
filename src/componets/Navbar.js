@@ -6,40 +6,64 @@ import { AiOutlineForm } from 'react-icons/ai'
 import { RiDashboardFill } from 'react-icons/ri'
 import { AiFillContacts } from 'react-icons/ai'
 import { HiDocumentDuplicate } from 'react-icons/hi'
+import React, { useEffect, useState } from 'react';
 import TrackForm from './TrackForm'
 
 const Navbar = () => {
+    const [showHome, setShowHome] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+        setShowHome(window.innerWidth > 700);
+        };
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+        
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
+    }, []);
     return (
         <div className={"sidenav"}>
-            <img src={logo} alt='logo'
-            className='logo' />
+            {showHome && (
+                <img src={logo} alt='logo'
+                className='logo' />
+            )}
             <ul>
                 <li>
-                    <Link to="/" >
-                        <AiFillHome /> 
-                        Home
+                    <Link to="/">
+                        <AiFillHome />
+                        {showHome && (
+                            <span>Home</span>
+                        )}
                     </Link>
                 </li>
                 <li>
                     <Link to="/calendar" >
                         <AiFillCalendar /> 
-                        Calendar
+                        {showHome && (
+                            <span>Calendar</span>
+                        )}
                     </Link>
                 </li>
                 <li>
                     <Link to="/dashboard">
                         <RiDashboardFill />
-                        Dashboard
+                        {showHome && (
+                            <span>Dashboard</span>
+                        )}
                     </Link>
                 </li>
                 <li>
-                    
                     <TrackForm/>
                 </li>
                 <li>
                     <Link to="/about">
                         <AiFillContacts /> 
-                        About us
+                        {showHome && (
+                            <span>About us</span>
+                        )}
                     </Link>
                 </li>
             </ul>

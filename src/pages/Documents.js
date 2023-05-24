@@ -51,7 +51,7 @@ function Documents () {
                         <Form className="m-3">
                             <InputGroup className="my-3">
                                 <h4><AiOutlineSearch className="search"/></h4>
-                                <Form.Control onChange={(e) => setSearch(e.target.value)} placeholder='Search' />
+                                <Form.Control onChange={(e) => setSearch(e.target.value.toLowerCase())} placeholder='Search' />
                             </InputGroup> 
                         </Form>
                         <Table>

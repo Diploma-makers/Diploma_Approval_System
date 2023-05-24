@@ -25,21 +25,23 @@ body {
   padding: 0;
   font-family: 'Roboto', sans-serif;
   background-color: #1f1f1f;
+  /* background-color: #000000; */
   color: white;
 }
 
 header {
-  width: 100%;
+  width: auto;
   padding: 20px;
   background-color: #1f1f1f;
 }
 
 .sidenav {
-  width: 240px;
+  width: auto;
   background-color: #1f1f1f;
   height: 95vh;
   padding: 0 30px;
 }
+
 
 h2{
   text-align: center;
@@ -166,7 +168,7 @@ header svg {
 }
 
 .dashBoard{
-  display: flex;
+  display: inline-block;
   justify-content: space-between;
   margin: 5%;
 }
@@ -191,7 +193,7 @@ header svg {
 }
 
 .rightbody{
-  width: 100%;
+  width: 150%;
   background-color: black;
 }
 
@@ -204,11 +206,21 @@ header svg {
   background-color: #1f1f1f;
   color: #ececec;
 }
+.formHome{
+  border: 1px solid #2f2f2f;
+  background-color: #1f1f1f;
+  /* background-color: red; */
+  color: #ececec;
+  width: auto;
+}
 
 .form{
   border: 1px solid #2f2f2f;
   background-color: #1f1f1f;
+  /* background-color: red; */
   color: #ececec;
+  width: auto;
+  max-width: 600px;
 }
 
 .tdbor{
@@ -388,6 +400,7 @@ header svg {
 .react-calendar {
   width: auto;
   max-width: 100%;
+  min-width: 350px;
   background: #141414;
   font-family: Arial, Helvetica, sans-serif;
   line-height: 5rem;
@@ -432,6 +445,7 @@ header svg {
 .react-calendar__navigation button {
   color: white;
   min-width: 44px;
+  height: 55px;
   padding-left: 0;
   background: none;
   border: 1px solid #303030;
@@ -557,4 +571,18 @@ header svg {
 }
 .aboutGit{
   display: flex;
+}
+
+@media screen and (max-width: 700px) {
+  .sidenav{
+    transition: 0.3s;
+    width: 50px;
+    padding: 0;
+  }
+  .form{
+    width: auto;
+    min-width: 190px;
+    transition: 0.3s;
+    max-width: none;
+  }
 }

@@ -8,6 +8,21 @@ import { Link } from 'react-router-dom'
 
 
 const TrackForm = () => {
+  const [showHome, setShowHome] = useState(false);
+
+    useEffect(() => {
+        const handleResize = () => {
+        setShowHome(window.innerWidth > 700);
+        };
+        handleResize();
+
+        window.addEventListener('resize', handleResize);
+        
+        return () => {
+        window.removeEventListener('resize', handleResize);
+        };
+    }, []);
+
     const findByUid = () => {
         const collectionRef = collection(db, "users");
         const queryRef = query(collectionRef, where("uid", "==", auth.currentUser.uid));
@@ -41,7 +56,10 @@ const TrackForm = () => {
             return(
                 <Link to="/form">
                     <AiOutlineForm /> 
-                    Form
+                        {showHome && (
+                            <span>Form</span>
+                        )}
+                    
                 </Link>
             )
             

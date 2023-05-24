@@ -9,14 +9,23 @@ const Dashboard = () => {
             <hr></hr>
                 <div className="dashBoard">
                     <Link to="documents"><button className="dashButton"> Software Engineering</button></Link>
+                 </div>
+                <div className="dashBoard">
                     <Link to="documents"><button className="dashButton"> Computer Science</button></Link>
+                </div>
+                <div className="dashBoard">
                     <Link to="documents"><button className="dashButton" variant="dark"> Big Data Analysis</button></Link>
                 </div>
                 <div className="dashBoard">
                     <Link to="documents"><button className="dashButton"> Media Technologies</button></Link>
+                </div>
+                <div className="dashBoard">
                     <Link to="documents"><button className="dashButton"> Cybersecurity</button></Link>
+                </div>
+                <div className="dashBoard">
                     <Link to="documents"><button className="dashButton"> Smart Technologies</button></Link>
                 </div>
+                
         </div>
     )
 }
