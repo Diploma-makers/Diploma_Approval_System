@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "183070933585",
+    "firebase_url": "https://diploma-approval-system-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "diploma-approval-system",
+    "storage_bucket": "diploma-approval-system.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183070933585:android:098e966e54b2cc93b6ae70",
+        "android_client_info": {
+          "package_name": "com.diploma_makers_JVapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183070933585-n77snb274gig5hr1osslumnq4idh2lrm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9kwZiQftiXcIasvAeHELV7WmSN9sgdbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183070933585-n77snb274gig5hr1osslumnq4idh2lrm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:183070933585:android:110a18f3100b18d3b6ae70",
+        "android_client_info": {
+          "package_name": "sadas.asd.asd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "183070933585-n77snb274gig5hr1osslumnq4idh2lrm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA9kwZiQftiXcIasvAeHELV7WmSN9sgdbo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "183070933585-n77snb274gig5hr1osslumnq4idh2lrm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

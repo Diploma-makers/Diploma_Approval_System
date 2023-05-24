@@ -71,7 +71,7 @@ const Profile = () => {
                         <Form.Group>Group:
                             <h6>{users.map((users) => ( users.group).toUpperCase())}</h6></Form.Group>
                         <Form.Group>Topic:
-                            <h6>Apple</h6></Form.Group>
+                            <h6>{users.map((users) => ( users.topic).toUpperCase())}</h6></Form.Group>
                     </Form>
                     {
                         teamShow(currentRole)

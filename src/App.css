@@ -188,6 +188,11 @@ header svg {
   transition: 0.3s;
 }
 
+.adminShow{
+  display: flex;
+  justify-content: space-around;
+}
+
 .main {
   display: flex;
 }
@@ -584,5 +589,8 @@ header svg {
     min-width: 190px;
     transition: 0.3s;
     max-width: none;
+  }
+  .adminShow{
+    display: inline;
   }
 }

@@ -36,8 +36,22 @@ const TrackRole = () => {
     const docShow = (role) => {
         if(role == "Student"){
             return <Documents/>
-        }else{
+        }else if(role == "Teacher"){
             return <DocumentsTeacher/>
+        } else {
+          return (
+            <>
+              <div className='adminShow'>
+                <div>
+                  <span></span>
+                  <Documents/>
+                </div>
+                <div>
+                  <DocumentsTeacher/>
+                </div>
+              </div>
+            </>
+          )
         }
     }
     
