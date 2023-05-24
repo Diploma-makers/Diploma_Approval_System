@@ -47,7 +47,7 @@ function DocumentsTeacher () {
             <div className="docPage">
                 <h1>Documents</h1>
                 <hr></hr>
-                <div className="form">
+                <div className="formHome">
                         <Form className="m-3">
                             <InputGroup className="my-3">
                                 <h4><AiOutlineSearch className="search"/></h4>
