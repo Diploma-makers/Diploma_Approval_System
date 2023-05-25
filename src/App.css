@@ -480,9 +480,9 @@ header svg {
   font-size: 0.75em;
   padding: calc(0.75em / 0.75) calc(0.5em / 0.75);
 }
-.react-calendar__month-view__days__day--weekend {
-  /* color: red; */
-}
+/* .react-calendar__month-view__days__day--weekend {
+  color: red; 
+} */
 .react-calendar__month-view__days__day--neighboringMonth {
   color: #757575;
 }
@@ -499,9 +499,9 @@ header svg {
   padding: 0.75em 0.5em;
   background: none;
 }
-.react-calendar__tile:disabled {
-  /* background-color: #f0f0f0; */
-}
+/* .react-calendar__tile:disabled {
+  background-color: #f0f0f0; 
+} */
 .react-calendar__tile:enabled:hover,
 .react-calendar__tile:enabled:focus {
   /* color: #006edc; */

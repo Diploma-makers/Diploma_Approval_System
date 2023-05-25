@@ -35,8 +35,8 @@ const Profile = () => {
     useEffect(() => {
     findByUid().then((data) => setUsers(data));
     }, []);
-    console.log(users.map((users) => ( users.role)))
 
+    console.log(users.map((users) => ( users.role)))
     const currentRole = users.map((users) => ( users.role))
     const teamShow = (currentRole) => {
         if(currentRole == "Student"){
@@ -44,13 +44,53 @@ const Profile = () => {
                 <Form className='infoPro'>
                     <h3>Team members</h3>
                     <Form.Group>
+                        <div>
                         <BsPersonCircle className='logoMem'/>
+                        {
+                            members.map((users) => ( users.member2))
+                        }
+                        </div>
+                        <div>
                         <BsPersonCircle className='logoMem'/>
+                        
+                        {
+                            members.map((users) => ( users.member3))
+                        }
+                        </div>
                     </Form.Group>
                 </Form>
             )
         }
     }
+// group find
+    const findMembers = () => {
+        const collectionRef = collection(db, "teams");
+        const queryRef = query(collectionRef, where("member1", "==", auth.currentUser.uid));
+    
+        return getDocs(queryRef).then((querySnapshot) => {
+        const res = [];
+    
+        querySnapshot.forEach((users) => {
+            res.push({
+            uid: users.uid,
+            ...users.data()
+            });
+        });
+    
+        return res;
+        }).catch((error) => {
+        console.error('Error occurred:', error);
+        return [];
+        });
+    };
+    
+    const [members, setmembers] = useState([]);
+
+    useEffect(() => {
+        findMembers().then((data) => setmembers(data));
+    }, []);
+    
+    // console.log("group ::::" + members.map((users) => ( users.topicName)))
 
     return (
         <div className="docPage">
@@ -71,7 +111,7 @@ const Profile = () => {
                         <Form.Group>Group:
                             <h6>{users.map((users) => ( users.group).toUpperCase())}</h6></Form.Group>
                         <Form.Group>Topic:
-                            <h6>{users.map((users) => ( users.topic).toUpperCase())}</h6></Form.Group>
+                            <h6>{members.map((users) => ( users.topicName))}</h6></Form.Group>
                     </Form>
                     {
                         teamShow(currentRole)
