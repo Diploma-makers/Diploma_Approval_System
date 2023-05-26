@@ -16,6 +16,7 @@ import TrackRole from './componets/TrackRole';
 import './App.css';
 import TrackForm from './componets/TrackForm';
 import FormDoc from './pages/FormDoc';
+import DocumentsSelected from './pages/DoumentsSelected';
 
 function Main() {
   return (
@@ -35,6 +36,7 @@ function Main() {
               <Route path='/calendar'  element={<CalendarApp />} exact/>
               <Route path='/dashboard'  element={<Dashboard />}/>
               <Route path='/dashboard/documents'  element={<TrackRole />}/>
+              <Route path='/selected'  element={<DocumentsSelected />}/>
               <Route path='/form'  element={<FormDoc />}/>
               <Route path='/topic' element={<Topic />}/>
               <Route path='/profile' element={<Profile />}/>

@@ -22,7 +22,7 @@ def get_all_documents(collection_name):
     return documents
 
 # Example usage
-collection_name = 'documents'
-all_documents = get_all_documents(collection_name)
-for doc in all_documents:
-    print('Document:', doc)
+# collection_name = 'documents'
+# all_documents = get_all_documents(collection_name)
+# for doc in all_documents:
+#     print('Document:', doc)

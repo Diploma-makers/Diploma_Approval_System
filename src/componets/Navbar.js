@@ -6,6 +6,7 @@ import { AiOutlineForm } from 'react-icons/ai'
 import { RiDashboardFill } from 'react-icons/ri'
 import { AiFillContacts } from 'react-icons/ai'
 import { HiDocumentDuplicate } from 'react-icons/hi'
+import AdminTrack from "./AdminTrack"
 import React, { useEffect, useState } from 'react';
 import TrackForm from './TrackForm'
 
@@ -57,6 +58,9 @@ const Navbar = () => {
                 </li>
                 <li>
                     <TrackForm/>
+                </li>
+                <li>
+                    <AdminTrack/>
                 </li>
                 <li>
                     <Link to="/about">
